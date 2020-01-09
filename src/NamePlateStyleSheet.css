@@ -1,0 +1,23 @@
+.NamePlateDiv {
+   /* background: #282c34;*/
+    padding-left: 10%;
+    color: #282c34;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+.Name {
+    justify-content: left;
+    color: azure;
+    border-bottom-width: thin;
+    margin-bottom: 4px;
+    flex: 8;
+
+}
+.OneLineDescription {
+    color: aquamarine;
+    justify-content: left;
+    margin-top: 5px;
+
+}

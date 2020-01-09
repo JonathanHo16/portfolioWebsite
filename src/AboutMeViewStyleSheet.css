@@ -1,0 +1,25 @@
+.AboutMeDiv {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 2.5%;
+}
+.Description {
+    flex: 1;
+    color: black;
+
+}
+.DescriptionText{
+    color: black;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    text-align: left;
+    flex: 1;
+}
+.Picture {
+    flex: 1;
+    align-content: center;
+    text-align: center;
+}
