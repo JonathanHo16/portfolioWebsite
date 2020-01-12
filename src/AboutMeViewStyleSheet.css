@@ -1,7 +1,7 @@
 .AboutMeDiv {
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: azure;
     padding-bottom: 5%;
     padding-top: 5%;
     padding-left: 2.5%;
@@ -25,4 +25,16 @@
     flex: 1;
     align-content: center;
     text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+.aboutMeHeader {
+    margin-left: 2.5%;
+    margin-top: 0px;
+    color: black;
+}
+.myFace {
+    margin-top: 100px;
+    border-radius: 100px;
+    vertical-align: middle;
 }

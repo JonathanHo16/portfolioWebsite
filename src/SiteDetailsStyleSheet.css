@@ -1,0 +1,26 @@
+.siteDetails {
+    height: fit-content;
+    background-color: #282c34;
+    align-content: center;
+    text-align: center;
+    direction: ltr;
+    display: flex;
+    flex-direction: row;
+}
+.section {
+    align-content: center;
+    text-align: center;
+    width: fit-content;
+    flex: 1;
+    background-color: #282c34;
+}
+.techLogo {
+    height: 80px;
+    width: auto;
+}
+.header {
+    color: azure;
+    font-family: "Century Gothic", serif;
+    font-size: 20px;
+    margin: 0px;
+}

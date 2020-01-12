@@ -12,7 +12,7 @@ export default class WorkElement extends React.Component{
     render () {
 
         const listItems = this.props.detailsArray.map((detailString) =>
-            <li>{detailString}</li>);
+            <li key={detailString}>{detailString}</li>);
         return <div className={'elementContainer'}>
             <h2 className={"workTitle"}>{this.props.title}</h2>
             <div className={"detailsContainer"}>

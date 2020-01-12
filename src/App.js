@@ -6,6 +6,7 @@ import NamePlate from './NamePlate';
 import AboutMeView from "./AboutMeView";
 import ToolBox from "./ToolBox";
 import WorkExperience from "./WorkExperience";
+import SiteDetails from './SiteDetails.js'
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <AboutMeView/>
       <ToolBox/>
       <WorkExperience/>
-        <img src={logo}className="App-logo"alt="logo"/>
+      <SiteDetails/>
     </div>
   );
 }

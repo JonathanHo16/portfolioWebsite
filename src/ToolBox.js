@@ -14,23 +14,23 @@ import Tool from "./Tool";
 export default class ToolBox extends React.Component
 {
     render() {
-        return <div className={"ToolBox"}>
+        return <div className={"ToolBox"} id={'toolBox'}>
             <h1>My Tools</h1>
             <table>
                 <tbody>
                     <tr>
-                        <td><Tool image={cppLogo} name={"C++"}/> </td>
-                        <td><Tool image={appleLogo} name={"Objective-C"}/> </td>
-                        <td><Tool image={watchOsLogo} name={"Apple's WatchOs"}/> </td>
-                        <td><Tool image={nodeJsLogo} name={"NodeJS"}/> </td>
-                        <td><Tool image={javaLogo} name={"Java"}/> </td>
+                        <td><Tool image={cppLogo} id={"C++"}/> </td>
+                        <td><Tool image={appleLogo} id={"Objective-C"}/> </td>
+                        <td><Tool image={watchOsLogo} id={"Apple's WatchOs"}/> </td>
+                        <td><Tool image={nodeJsLogo} id={"NodeJS"}/> </td>
+                        <td><Tool image={javaLogo} id={"Java"}/> </td>
                     </tr>
                     <tr>
-                        <td><Tool image={mysqlLogo} name={"mySQL"}/> </td>
-                        <td><Tool image={phpLogo} name={"PHP"}/> </td>
-                        <td><Tool image={tclLogo} name={"TCL"}/> </td>
-                        <td><Tool image={gitIcon} name={"Git"}/> </td>
-                        <td><Tool image={subversionLogo} name={"Subversion"}/> </td>
+                        <td><Tool image={mysqlLogo} id={"mySQL"}/> </td>
+                        <td><Tool image={phpLogo} id={"PHP"}/> </td>
+                        <td><Tool image={tclLogo} id={"TCL"}/> </td>
+                        <td><Tool image={gitIcon} id={"Git"}/> </td>
+                        <td><Tool image={subversionLogo} id={"Subversion"}/> </td>
                     </tr>
                 </tbody>
 

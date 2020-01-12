@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutMeViewStyleSheet.css';
+import me from './logos/me.jpg'
 
 export default class AboutMeView extends React.Component
 {
@@ -19,13 +20,14 @@ export default class AboutMeView extends React.Component
     };
 
     render(){
-        return <div className={"AboutMeDiv"}>
+        return <div className={"AboutMeDiv"} id={"about"}>
                 <div className={"Description"}>
+                    <h1 className={'aboutMeHeader'}>About me </h1>
                     <p className={"DescriptionText"}>{this.props.proDescription}</p>
                     <p className={"DescriptionText"}>{this.props.personalDescription}</p>
                 </div>
             <div className={"Picture"}>
-                    <p>A picture is going here</p>
+                <img className={'myFace'} src={me}/>
             </div>
         </div>
     }

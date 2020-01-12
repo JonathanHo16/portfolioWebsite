@@ -5,6 +5,8 @@
     height: 60px;
     vertical-align: middle;
     direction: ltr;
+    display: flex;
+    flex-direction: row;
 }
 .contactContainer {
     width: 28%;
@@ -12,10 +14,37 @@
     margin-left: 2.5%;
     height: 100%;
     direction: ltr;
+    flex:1;
 }
 .logo {
     height: 40px;
     vertical-align: middle;
     padding-top: 10px;
     padding-right: 30px;
+}
+.nameBar {
+    text-align: center;
+    color: aquamarine;
+    background-color: black;
+    flex:1;
+    opacity: 1;
+}
+.nameBarHidden {
+    flex:1;
+    opacity: 0;
+}
+.jumpContainer {
+    flex:1;
+    display: flex;
+    vertical-align: middle;
+}
+.jumpButton {
+    margin: 0px 20px;
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    border-width: 0px;
+}
+.jumpButton:hover {
+    cursor: pointer;
 }
