@@ -37,6 +37,7 @@
     flex:1;
     display: flex;
     vertical-align: middle;
+    direction: rtl;
 }
 .jumpButton {
     margin: 0px 20px;
@@ -44,6 +45,7 @@
     font-size: 20px;
     background-color: transparent;
     border-width: 0px;
+    float: right;
 }
 .jumpButton:hover {
     cursor: pointer;

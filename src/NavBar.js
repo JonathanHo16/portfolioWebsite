@@ -91,9 +91,9 @@ export default class NavBar extends React.Component {
                 <h2>Jonathan Ho</h2>
             </div>
             <div className={"jumpContainer"}>
-                <button className='jumpButton' onClick={() => this.scrollToRef('about')}>About</button>
-                <button className='jumpButton' onClick={() => this.scrollToRef('toolBox')}>ToolBox</button>
                 <button className='jumpButton' onClick={() => window.open(resumePdf, '_blank')}>Resume</button>
+                <button className='jumpButton' onClick={() => this.scrollToRef('toolBox')}>ToolBox</button>
+                <button className='jumpButton' onClick={() => this.scrollToRef('about')}>About</button>
             </div>
         </div>
             }
