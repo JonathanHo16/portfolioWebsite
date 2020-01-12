@@ -9,6 +9,7 @@
 .toolName {
     text-align: center;
     color: azure;
+    width: 100%;
 }
 .toolImage{
     height: 60px;

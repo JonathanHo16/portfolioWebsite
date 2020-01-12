@@ -5,6 +5,8 @@ import NavBar from "./NavBar";
 import NamePlate from './NamePlate';
 import AboutMeView from "./AboutMeView";
 import ToolBox from "./ToolBox";
+import WorkExperience from "./WorkExperience";
+
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <NamePlate/>
       <AboutMeView/>
       <ToolBox/>
+      <WorkExperience/>
+        <img src={logo}className="App-logo"alt="logo"/>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 .ToolBox {
     background-color: #282c34;
-    height: 1000px;
     width: 100%;
 
 }
@@ -13,6 +12,10 @@ h1 {
 table {
     padding-left: 10%;
     padding-right: 10%;
+    margin-bottom: 5%;
     width: 100%;
+}
+td {
+    width: 15%;
 }
 

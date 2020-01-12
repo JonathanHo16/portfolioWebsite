@@ -1,0 +1,64 @@
+.elementContainer {
+    margin-left: 5%;
+    width: 90%;
+    background-color: azure;
+    padding-right: 2.5%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.workTitle {
+    margin-left: 2.5%;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+.subWorkTitle {
+    font-style: italic;
+    color: #282c34;
+    width:30%;
+    margin: 0px 0px 10px 2.5%;
+    flex: 1;
+}
+.detailsContainer
+{
+    direction: ltr;
+    display: flex;
+    flex-direction: row;
+}
+.dateRange {
+    margin-top: 0px;
+    flex: 1;
+    direction: rtl;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #282c34;
+    text-align: right;
+    justify-content: right;
+    width: 30%;
+}
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+}
+.imageContainer {
+    flex:4;
+    text-align: center;
+    vertical-align: center;
+
+}
+.jobResponsibilities {
+    flex:10;
+    padding-left: 2.5%;
+    color: black;
+    font-family: "Century Gothic";
+    font-size: 16px;
+    text-align: left;
+}
+.companyLogo {
+    height: auto;
+    margin: 5%;
+    width:80%;
+
+}
