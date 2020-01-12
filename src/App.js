@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from "./NavBar";
 import NamePlate from './NamePlate';
 import AboutMeView from "./AboutMeView";
+import ToolBox from "./ToolBox";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavBar/>
       <NamePlate/>
       <AboutMeView/>
+      <ToolBox/>
     </div>
   );
 }

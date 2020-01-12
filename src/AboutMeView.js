@@ -4,7 +4,7 @@ import './AboutMeViewStyleSheet.css';
 export default class AboutMeView extends React.Component
 {
     static defaultProps = {
-        proDescription: "I am an Engineering student at the University of Waterloo studying Systems Design Engineering " +
+        proDescription: "I am an Engineering student at the University of Waterloo studying Systems Design Engineering. " +
             "My passions include software development in all layers of the stack, deployment pipelines and " +
             "discovering new technologies. Through out my previous internships I have gained experience working in many different " +
             "stacks and cultures. My experience ranges from mobile iOS development working with Objective-C " +
@@ -15,7 +15,7 @@ export default class AboutMeView extends React.Component
             "cooking comes my food allergies. Since I often go to restaurants and I am not able to order my first " +
             "choice item I decided to learn to cook so that in these scenarios I can go home and make my dish of " +
             "choice allergen free. This has taught me to problem solve as I must often to reverse-engineer the " +
-            "elements without the aid of a recipe"
+            "elements without the aid of a recipe."
     };
 
     render(){

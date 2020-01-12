@@ -1,6 +1,6 @@
 .NamePlateDiv {
    /* background: #282c34;*/
-    padding-left: 10%;
+    /*padding-left: 2.5%; */
     color: #282c34;
     justify-content: left;
     display: flex;
@@ -19,5 +19,6 @@
     color: aquamarine;
     justify-content: left;
     margin-top: 5px;
+    margin-left: 2.5%;
 
 }
