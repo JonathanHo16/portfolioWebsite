@@ -1,7 +1,7 @@
 import React from 'react';
 import './SiteDetailsStyleSheet.css';
 import reactLogo from './logos/ReactLogo.png';
-import awsLogo from './logos/awsLogo.png';
+import gcpLogo from './logos/gcpLogo.png';
 
 export default class SiteDetails extends React.Component{
 
@@ -13,7 +13,7 @@ export default class SiteDetails extends React.Component{
             </div>
             <div className={"section"}>
                 <h6 className={'header'}>Running on </h6>
-                <img src={awsLogo} className={"techLogo"}/>
+                <img src={gcpLogo} className={"techLogo"}/>
             </div>
         </div>
     }
