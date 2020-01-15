@@ -1,5 +1,4 @@
 import React from 'react';
-import Drawer from 'rc-drawer'
 import logo from './logo.svg';
 import './App.css';
 import NavBar from "./NavBar";
@@ -7,7 +6,8 @@ import NamePlate from './NamePlate';
 import AboutMeView from "./AboutMeView";
 import ToolBox from "./ToolBox";
 import WorkExperience from "./WorkExperience";
-import SiteDetails from './SiteDetails.js'
+import SiteDetails from './SiteDetails.js';
+import Drawer from './Drawer.js';
 
 export default class App extends React.Component {
 
@@ -23,16 +23,13 @@ export default class App extends React.Component {
     componentWillUnmount() {
         window.removeEventListener('resize', this.handleWindowSizeChange);
     }
-    handleWindowSizeChange = () => {
-        this.setState({ width: window.innerWidth });
-        this.forceUpdate();
-    };
 
     render () {
         const { width } = this.state;
         const isMobile = width <= 500;
         if (isMobile) {
             return (<div className="App">
+                    <Drawer/>
                 <NamePlate/>
                 <AboutMeView/>
                 <ToolBox/>

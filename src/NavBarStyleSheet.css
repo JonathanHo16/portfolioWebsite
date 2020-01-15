@@ -17,10 +17,12 @@
     flex:1;
 }
 .logo {
-    height: 40px;
+    height: 50%;
     vertical-align: middle;
-    padding-top: 10px;
-    padding-right: 30px;
+    padding-top: 2vh;
+    padding-right: 5%;
+    width:auto;
+
 }
 .nameBar {
     text-align: center;
@@ -38,14 +40,16 @@
     display: flex;
     vertical-align: middle;
     direction: rtl;
+    flex-direction: row;
 }
 .jumpButton {
-    margin: 0px 20px;
     color: white;
     font-size: 20px;
     background-color: transparent;
     border-width: 0px;
     float: right;
+    flex:1;
+
 }
 .jumpButton:hover {
     cursor: pointer;
