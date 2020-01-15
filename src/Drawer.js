@@ -4,14 +4,11 @@ import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-;
 import linkedInIcon from './logos/linkedinIcon_white.png';
 import gitIcon from './logos/gitIcon_white.png';
 import emailIcon from './logos/emailIcon_white.png';
 import MenuIcon from '@material-ui/icons/MenuRounded';
-
 import Fab from '@material-ui/core/Fab';
-
 import resumePdf from "./resume.pdf";
 
 const useStyles = makeStyles({
