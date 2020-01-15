@@ -29,21 +29,21 @@ export default class App extends React.Component {
         const isMobile = width <= 500;
         if (isMobile) {
             return (<div className="App">
-                    <Drawer/>
-                <NamePlate/>
+                <NamePlate isMobile={isMobile}/>
                 <AboutMeView/>
                 <ToolBox/>
                 <WorkExperience/>
                 <SiteDetails/>
+                <Drawer/>
             </div>
             );
         } else {
             return (
                 <div className="App">
                     <NavBar/>
-                    <NamePlate/>
+                    <NamePlate isMobile={isMobile}/>
                     <AboutMeView/>
-                    <ToolBox/>
+                    <ToolBox isMobile={isMobile}/>
                     <WorkExperience/>
                     <SiteDetails/>
                 </div>

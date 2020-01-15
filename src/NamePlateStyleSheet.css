@@ -7,6 +7,15 @@
     flex-direction: column;
     padding-top: 60px;
 }
+.NamePlateDiv_mobile {
+    /* background: #282c34;*/
+    /*padding-left: 2.5%; */
+    color: #282c34;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+}
 .Name {
     justify-content: left;
     color: azure;

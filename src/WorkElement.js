@@ -8,7 +8,12 @@ export default class WorkElement extends React.Component{
     dateEnd;
     company;
     detailsArray;
-
+     constructor (props) {
+         super(props);
+         this.state = {
+             isMobile : window.innerWidth <= 500
+         };
+     }
     render () {
 
         const listItems = this.props.detailsArray.map((detailString) =>
@@ -19,7 +24,7 @@ export default class WorkElement extends React.Component{
                 <h4 className={"subWorkTitle"}>{this.props.company + " - " + this.props.location}</h4>
                 <h4 className={"dateRange"}>{this.props.dateStart + " - " + this.props.dateEnd}</h4>
             </div>
-            <div className={"contentContainer"}>
+            <div className={(this.state.isMobile ? "contentContainer_mobile" : "contentContainer")}>
                 <div className={"jobResponsibilities"}>
                     <ul>{listItems}</ul>
                 </div>

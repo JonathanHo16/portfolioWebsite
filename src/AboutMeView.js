@@ -4,6 +4,12 @@ import me from './logos/me.jpg'
 
 export default class AboutMeView extends React.Component
 {
+    constructor (props) {
+        super(props);
+        this.state = {
+            isMobile : window.innerWidth <= 500
+        };
+    }
     static defaultProps = {
         proDescription: "I am an Engineering student at the University of Waterloo studying Systems Design Engineering. " +
             "My passions include software development in all layers of the stack, deployment pipelines and " +
@@ -20,14 +26,14 @@ export default class AboutMeView extends React.Component
     };
 
     render(){
-        return <div className={"AboutMeDiv"} id={"about"}>
+        return <div className={(this.state.isMobile ? "AboutMeDiv_mobile" : "AboutMeDiv")} id={"about"}>
                 <div className={"Description"}>
                     <h1 className={'aboutMeHeader'}>About me </h1>
                     <p className={"DescriptionText"}>{this.props.proDescription}</p>
                     <p className={"DescriptionText"}>{this.props.personalDescription}</p>
                 </div>
             <div className={"Picture"}>
-                <img className={'myFace'} src={me}/>
+                <img className={(this.state.isMobile ? "myFace_mobile" : "myFace")} src={me}/>
             </div>
         </div>
     }

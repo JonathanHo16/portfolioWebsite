@@ -9,6 +9,17 @@
     align-self: center;
     border-radius: 30px;
 }
+.AboutMeDiv_mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 2.5%;
+    width: 90%;
+    align-self: center;
+    border-radius: 30px;
+}
 .Description {
     flex: 1;
     color: black;
@@ -35,6 +46,11 @@
 }
 .myFace {
     margin-top: 100px;
+    border-radius: 100px;
+    vertical-align: middle;
+}
+.myFace_mobile {
+    margin-top: 20px;
     border-radius: 100px;
     vertical-align: middle;
 }

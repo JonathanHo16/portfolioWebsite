@@ -13,30 +13,73 @@ import subversionLogo  from './logos/subversionLogo.png'
 import Tool from "./Tool";
 export default class ToolBox extends React.Component
 {
+    isMobile;
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+            isMobile: window.innerWidth <= 500
+        };
+        console.log( "mobile state: " +this.props.isMobile);
+    }
     render() {
-        return <div className={"ToolBox"} id={'toolBox'}>
-            <h1>My Tools</h1>
-            <div className={"tableContainer"}>
-                <table>
-                    <tbody>
+        if (this.state.isMobile)
+        {
+            return <div className={"ToolBox"} id={'toolBox'}>
+                <h1>My Tools</h1>
+                <div className={"tableContainer"}>
+                    <table>
+                        <tbody>
                         <tr>
-                            <td><Tool image={cppLogo} id={"C++"}/> </td>
-                            <td><Tool image={appleLogo} id={"Objective-C"}/> </td>
-                            <td><Tool image={watchOsLogo} id={"Apple's WatchOs"}/> </td>
-                            <td><Tool image={nodeJsLogo} id={"NodeJS"}/> </td>
-                            <td><Tool image={javaLogo} id={"Java"}/> </td>
+                            <td><Tool image={cppLogo} id={"C++"}/></td>
+                            <td><Tool image={appleLogo} id={"Objective-C"}/></td>
+                            <td><Tool image={watchOsLogo} id={"Apple's WatchOs"}/></td>
                         </tr>
                         <tr>
-                            <td><Tool image={mysqlLogo} id={"mySQL"}/> </td>
-                            <td><Tool image={phpLogo} id={"PHP"}/> </td>
-                            <td><Tool image={tclLogo} id={"TCL"}/> </td>
-                            <td><Tool image={gitIcon} id={"Git"}/> </td>
-                            <td><Tool image={subversionLogo} id={"Subversion"}/> </td>
+                            <td><Tool image={nodeJsLogo} id={"NodeJS"}/></td>
+                            <td><Tool image={javaLogo} id={"Java"}/></td>
+                            <td><Tool image={mysqlLogo} id={"mySQL"}/></td>
                         </tr>
-                    </tbody>
+                        <tr>
+                            <td><Tool image={phpLogo} id={"PHP"}/></td>
+                            <td><Tool image={tclLogo} id={"TCL"}/></td>
+                            <td><Tool image={gitIcon} id={"Git"}/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><Tool image={subversionLogo} id={"Subversion"}/></td>
+                        </tr>
+                        </tbody>
 
-                </table>
+                    </table>
+                </div>
             </div>
-        </div>
+        } else {
+            return <div className={"ToolBox"} id={'toolBox'}>
+                <h1>My Tools</h1>
+                <div className={"tableContainer"}>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td><Tool image={cppLogo} id={"C++"}/></td>
+                            <td><Tool image={appleLogo} id={"Objective-C"}/></td>
+                            <td><Tool image={watchOsLogo} id={"Apple's WatchOs"}/></td>
+                            <td><Tool image={nodeJsLogo} id={"NodeJS"}/></td>
+                            <td><Tool image={javaLogo} id={"Java"}/></td>
+                        </tr>
+                        <tr>
+                            <td><Tool image={mysqlLogo} id={"mySQL"}/></td>
+                            <td><Tool image={phpLogo} id={"PHP"}/></td>
+                            <td><Tool image={tclLogo} id={"TCL"}/></td>
+                            <td><Tool image={gitIcon} id={"Git"}/></td>
+                            <td><Tool image={subversionLogo} id={"Subversion"}/></td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        }
+
     }
 }
