@@ -11,6 +11,7 @@ export default class AboutMeView extends React.Component
         };
     }
     static defaultProps = {
+
         proDescription: "I am an Engineering student at the University of Waterloo studying Systems Design Engineering. " +
             "My passions include software development in all layers of the stack, deployment pipelines and " +
             "discovering new technologies. Throughout my previous internships I have gained significant working experience with different " +
